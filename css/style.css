@@ -2,17 +2,24 @@
     margin: 0px;
     padding: 0px;
 }
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
 body{
-    background-image: url("img/2.jpg");
-    background-size: contain;
+    background-image: url(/img/2.jpg);
+    background-size:cover;
+    height: 100%;
     color: whitesmoke;
     font-family: 'Baloo 2', cursive;
+    background-repeat: no-repeat;
 }
 
 .left{
     position: absolute;
-    left: 60px;
-    top: 20px;
+    left: 6rem;
+    top: 2rem;
     display: inline-block;
 }
 .left img{
@@ -22,21 +29,21 @@ body{
 
 .left div{
     text-align: center;
-    line-height: 19px;
-    font-size: 23px;
+    line-height: 1.9rem;
+    font-size: 2.3rem;
     font-family: 'Baloo 2', cursive;
 }
     
 .mid{
     display: block;
     width: 48%;
-    margin: 20px auto;
+    margin: 2rem auto;
     padding: auto;
 }
 .right{
     position: absolute;
-    right: 34px;
-    top: 20px;
+    right: 3.4rem;
+    top: 2rem;
     display: inline-block;
 }
 .navbar{
@@ -45,58 +52,83 @@ body{
 }
 .navbar li{
     display: inline-block;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 .navbar li a{
     color: whitesmoke;
     text-decoration: none;
-    padding: 34px 23px;
+    padding: 3.4rem 2.3rem;
 }
 .navbar li a:hover , .navbar li a:active{
     color: red;
     text-decoration: underline;
 }
 .btn{
-    margin: 0px 9px;
+    margin: 0px .9rem;
     color: whitesmoke;
     background-color: black;
-    padding: 4px 14px;
-    border: 2px solid gray;
-    border-radius: 10px;
-    font-size: 15px;
+    padding: .4rem 1.4rem;
+    border: .2rem solid gray;
+    border-radius: 1rem;
+    font-size: 1.5rem;
 }
 .btn:hover{
     background-color: rgba(128, 128, 128, 0.589);
+    cursor: pointer;
 }
+
 .container{
-    border: 4px solid whitesmoke;
-    margin: 150px 80px;
-    padding: 75px;
+    border: 0.4rem solid whitesmoke;
+    margin: 15rem 8rem;
+    padding: 7.5rem;
     width: 33%;
-    border-radius: 28px;
+    border-radius: 2.8rem;
 }
 .form-group input{
     font-family: 'Baloo 2', cursive;
     text-align: center;
     display: block;
-    width: 500px;
-    padding: 1px;
-    border: 2px solid black;
-    margin: 11px auto;
-    Font-size: 23px;
-    border-radius: 10px;
+    width: 50rem;
+    padding: .1rem;
+    border: .2rem solid black;
+    margin: 1.1rem auto;
+    Font-size: 2.3rem;
+    border-radius: 1rem;
 }
 .container h1{
     text-align: center;
-    margin: 10px auto;
+    margin: 1rem auto;
     background-color: black;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: .2rem solid black;
+    border-radius: 1rem;
 }
 .container button{
     font-family: 'Baloo 2', cursive;
     display: block;
-    margin: 20px auto;
-    width: 500px;
+    margin: 2rem auto;
+    width: 50rem;
+}
+.boundary{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+}
 
+@media (max-width:1492px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:1313px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (max-width:955px){
+    html{
+        font-size: 30%;
+    }
 }
